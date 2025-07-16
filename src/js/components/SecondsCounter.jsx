@@ -41,21 +41,36 @@ const Counter = () => {
         }
         return prev + 1;
       });
-    }, 10);
+    }, 1);
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
-  return (
-    <div className="d-flex justify-content-end text-light bg-secondary p-5 m-3">
-      <h1>{seconds6}</h1>
-      <h1>{seconds5}</h1>
-      <h1>{seconds4}</h1>
-      <h1>{seconds3}</h1>
-      <h1 className="me-3">{seconds2}</h1>
-      <h1>{seconds}</h1>
-    </div>
-  );
+    return (
+  <div className="d-flex flex-wrap justify-content-center bg-dark p-5 m-3">
+      <div className="d-flex flex-column align-items-center justify-content-center border border-white rounded bg-dark text-white me-3" style={{ width: '100px', height: '120px', fontSize: '80px', fontFamily: 'revert', fontWeight: 'bold', userSelect: 'none' }}>
+          <i className="fa-regular fa-clock"></i>
+      </div>
+      <div className="d-flex align-items-center justify-content-center border border-white rounded bg-dark text-white me-3" style={{ width: '100px', height: '120px', fontSize: '80px', fontFamily: 'revert', fontWeight: 'bold', userSelect: 'none' }}>
+        {seconds6}
+      </div>
+      <div className="d-flex align-items-center justify-content-center border border-white rounded bg-dark text-white me-3" style={{ width: '100px', height: '120px', fontSize: '80px', fontFamily: 'revert', fontWeight: 'bold', userSelect: 'none' }}>
+        {seconds5}
+      </div>
+      <div className="d-flex align-items-center justify-content-center border border-white rounded bg-dark text-white me-3" style={{ width: '100px', height: '120px', fontSize: '80px', fontFamily: 'revert', fontWeight: 'bold', userSelect: 'none' }}>
+        {seconds4}
+      </div>
+      <div className="d-flex align-items-center justify-content-center border border-white rounded bg-dark text-white me-3" style={{ width: '100px', height: '120px', fontSize: '80px', fontFamily: 'revert', fontWeight: 'bold', userSelect: 'none' }}>
+        {seconds3}
+      </div>
+      <div className="d-flex align-items-center justify-content-center border border-white rounded bg-dark text-white me-3" style={{ width: '100px', height: '120px', fontSize: '80px', fontFamily: 'revert', fontWeight: 'bold', userSelect: 'none' }}>
+        {seconds2}
+      </div>
+      <div className="d-flex align-items-center justify-content-center border border-white rounded bg-dark text-white me-3" style={{ width: '100px', height: '120px', fontSize: '80px', fontFamily: 'revert', fontWeight: 'bold', userSelect: 'none' }}>
+        {seconds}
+      </div>
+ </div>
+    );
 };
 
 export default Counter;

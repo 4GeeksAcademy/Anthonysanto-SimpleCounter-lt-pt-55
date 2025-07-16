@@ -1,15 +1,20 @@
 .digit-box {
-  width: 100px;
-  height: 100px;
+  width: 12vw; /* ancho flexible relativo al viewport */
+  height: 12vw;
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 130px;
+  max-height: 130px;
   overflow: hidden;
-  border: 4px solid #ffffff;
+  border: 4px solid #3f3d3d;
   background-color: #343a40;
   color: white;
-  font-size: 80px;
+  font-size: 5vw; /* tamaño del número flexible */
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-inline-end: 20px;
 }
 
 .scroll-numbers {
