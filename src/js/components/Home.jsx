@@ -1,14 +1,16 @@
 import react from 'react';
-import Contador from './SecondsCounter';
+import Counter from './SecondsCounter';
+
+
 
 
 
 const Home = () => {
   return(
-    <Contador/>
+    <Counter/>
   ); 
   
 
 };
 
-export default Home;
+export default Home; 
