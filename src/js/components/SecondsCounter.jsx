@@ -41,10 +41,10 @@ const Counter = () => {
         }
         return prev + 1;
       });
-    }, 1);
+    }, 1000);
 
     return () => clearInterval(interval);
-  });
+  },[]);
 
     return (
   <div className="d-flex flex-wrap justify-content-center bg-dark p-5 m-3">
